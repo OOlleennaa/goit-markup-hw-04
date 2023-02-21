@@ -112,8 +112,9 @@ body {
 /* ****main*** */
 
 .main-sect-1 {
-    padding: 188px 0;    
-    background: var(--color1);
+    padding: 188px 0; 
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
+     background-size: cover;
     text-align: center;
     }
 .main-title {
@@ -147,7 +148,7 @@ body {
     list-style-type: none;  
     display: flex; 
     gap: 24px; 
-    
+    padding-top: 24px;
     }
 .main-skills-bloc {
     width: ((100% - 72px) / 4);
@@ -162,6 +163,15 @@ body {
     margin-bottom: 8px;  
     
 }
+.main-skills-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+}
+.main-skills-icon {
+}
+
 .main-actions {     
     font-size: 16px;
     line-height: 1.5;
@@ -244,9 +254,43 @@ mix-blend-mode: normal;
     text-align: center;
     letter-spacing: 0.02em;
     margin-top: 8px;
+    margin-bottom: 8px;
     color: var(--color2);
     }
 
+    .staff-soc-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+    .soc-list {
+    }
+    .staff-soc-item {
+        width: 40px;
+        height: 40px;
+        list-style-type: none;
+        /* color: #4D5AE5; */
+        /* border-radius: 50%; */
+
+    }
+    .staff-soc-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #4D5AE5;
+    }
+    .soc-link {
+    }
+    .staff-soc-icon {
+        fill: #FFFFFF;
+    }
+    .staff-soc-link:is(:hover, :focus){ 
+    background: var(--color4)
+    }
+    
 .nomarker {
     list-style-type: none;
     text-decoration: none;  
@@ -262,6 +306,57 @@ mix-blend-mode: normal;
     clip: rect(0 0 0 0);
     overflow: hidden;
      }
+
+     .main-customer {
+        margin-top: 102px;
+    }
+  .main-customer-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+
+    }
+    .main-customer-list {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 120px;
+        margin-top: 86px;
+    }
+    .customer-list {
+    }
+    .customer-item {
+    
+    list-style-type: none;
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+    
+    
+    }
+
+    .main-customer-link:is(:hover, :focus){
+        border-color: #404BBF;
+        color: #404BBF;
+    }
+   
+    .main-customer-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color2);
+    border-radius: 5px;
+    color: #8e8f99;
+    }
+    .customer-link {
+    }
+    .customer-icon {
+        fill:currentColor;
+    }
 
         /* *****footer***** */
 .container-footer {
@@ -293,6 +388,44 @@ mix-blend-mode: normal;
     width: 264px;
     margin-top: 16px;
     color: var(--color7);
+    }
+
+    .footer-container {
+    display: flex;
+    }
+    .footer-left {
+    margin-right: 120px;
+    }
+    .footer-soc-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+    }
+    .footer-soc-list {
+        display: flex;
+        gap: 16px;
+        margin-top: 16px;
+    }
+    .footer-soc-item {
+        list-style-type: none;
+    }
+    .footer-soc-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #2f3636;
+    }
+    .footer-soc-link:is(:hover, :focus){ 
+        background: #31D0AA
+        }
+    .footer-soc-icon {
+        fill: #FFFFFF;
     }
 
     /* ********Portfolio*********** */
@@ -332,6 +465,7 @@ mix-blend-mode: normal;
 .pf-main-but {
     cursor: pointer;
 }
+.pf-main-link:is(:hover, :focus){box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);}
 .function-list {
     display: flex;
     flex-wrap: wrap;
@@ -344,7 +478,9 @@ mix-blend-mode: normal;
 
 .pf-main-link {
     text-decoration: none;
+    display: block;
 }
+
 .funktwherefunct {
     padding: 32px 0 32px 15px;
     background: #FFFFFF;
